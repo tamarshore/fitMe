@@ -1,9 +1,9 @@
 import os
 from flask import Flask
-from .models import db
-from .auth import auth
-from .decorators import json, etag
-from .errors import not_found, not_allowed
+from api.models import db
+from api.auth import auth
+from api.decorators import json, etag
+from api.errors import not_found, not_allowed
 
 
 def create_app(config_module=None):
