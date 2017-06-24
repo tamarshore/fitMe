@@ -7,9 +7,9 @@ from . import api
 @api.route('/exercises/', methods=['GET'])
 @etag
 @json
-@collection(Exercises)
+@collection(Exercise)
 def get_exercises():
-    return Exercises.query
+    return Exercise.query
 
 
 @api.route('/exercises/<int:id>', methods=['GET'])

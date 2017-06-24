@@ -35,4 +35,4 @@ def after_request(response):
     return response
 
 # do this last to avoid circular dependencies
-from . import exercises
+# from . import exercises
